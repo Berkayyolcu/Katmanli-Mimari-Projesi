@@ -1,0 +1,54 @@
+﻿@model AgriculturePresentation.Models.LoginViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <!-- Title -->
+    <title>Login Sayfası</title>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="~/snow-login-form-starter/css/style.css" type="text/css" media="all" />
+</head>
+<body>
+    <!-- login form -->
+    <section class="w3l-login">      
+        <div class="overlay">
+            <div class="wrapper">
+                <div class="form-section">
+                    
+                    <h3>Hoşgeldiniz</h3>
+                    <br />
+
+                    <form method="post" class="signin-form">                     
+                        <div class="form-input">
+                            <input type="text" class="form-control form-control-lg" asp-for="UserName" placeholder="Kullanıcı Adınız" required="" autofocus>
+                        </div>
+
+                        <div class="form-input">
+                            <input type="password" class="form-control form-control-lg" asp-for="Password" placeholder="Şifreniz" required="">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary theme-button mt-4">GİRİŞ YAP</button>
+                    </form>
+
+                    <p class="signup">Bir Hesabın Yok mu ? <a href="/SignUp/Index/" class="signuplink">Kayıt Ol</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- copyright -->
+        <div class="copy-right">
+            <p>&copy; @DateTime.Now.Year Snow Login Form. Tüm Hakları Saklıdır | Design by <a href="http://w3layouts.com/" target="_blank">W3Layouts</a></p>
+        </div>
+    </section>
+</body>
+</html>
